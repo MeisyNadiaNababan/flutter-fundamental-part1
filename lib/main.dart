@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'basic_widgets/text_widget.dart'; //tambahkan untuk menuju ke file text_widget.dart
-import 'basic_widgets/image_widget.dart'; //tambahkan untuk menuju ke file image_widget.dart
+import 'basic_widgets/loading_cupertino.dart'; // import file loading_cupertino.dart
 
 void main() {
-  runApp(const MyApp());
+  runApp(const LoadingCupertino()); // jalankan aplikasi dengan widget LoadingCupertino
 }
 
 class MyApp extends StatelessWidget {
@@ -106,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const MyImageWidget(), //panggil image widget
+            const LoadingCupertino(), //panggil image widget
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
